@@ -1,0 +1,282 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b253c;
+}
+
+/* NAVBAR START FROM HERE */
+nav {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    margin: 20px 50px;
+    color: #c2ce40;
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-shadow: 0px 0px 4px #c2ce40;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    cursor: pointer;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50px;
+    width: 0;
+    height: 3px;
+    transition: 3s;
+    background-color: #c2ce40;
+}
+
+h2:hover:after {
+    width: 200px;
+    border-radius: 50px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "poppins";
+}
+
+ul li a {
+    color: white;
+    padding: 0px 10px;
+    margin: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul li a:hover {
+    color: #1b253c;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+
+/* NAVBAR BUTTONS */
+.buttons button {
+    border: none;
+    cursor: pointer;
+    margin: 0px 0px;
+    padding: 8px 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+button[type="login"] {
+    color: #c2ce40;
+    background-color: transparent;
+}
+
+button[type="login"]:hover {
+    color: #b0b2bf;
+}
+
+button[type="sign"] {
+    background-color: #c2ce40;
+    border-radius: 6px;
+    margin-right: 30px;
+}
+
+button[type="sign"]:hover {
+    box-shadow: 0px 0px 5px #c2ce40;
+}
+
+
+/* PODCAST GIRLS IMG */
+.img img {
+    width: 700px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+/* CONTAINER START FROM HERE */
+.container {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+h1 {
+    color: hsl(0, 100%, 100%);
+    font-size: 3.3rem;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.para {
+    margin-top: 35px;
+}
+
+p {
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 1.2rem;
+    font-family: "poppins";
+}
+
+/* FREE TRAIL AND WATCH DEMO BUTTONS */
+.button2 {
+    margin-top: 30px;
+}
+
+.freetrial {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 17px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #c2ce40;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.freetrial:hover {
+    box-shadow: 0px 0px 8px #b0b2bf;
+}
+
+.demo {
+    /* border: none; */
+    color: #ffffff;
+    cursor: pointer;
+    padding: 17px 35px;
+    margin-left: 30px;
+    background: transparent;
+    border-radius: 50px;
+    border: #ffffff 2px solid;
+}
+
+.demo:hover {
+    color: #b0b2bf;
+}
+
+/* SOCIAL ICONS */
+.icons img {
+    display: block;
+    width: 130px;
+    margin-top: 80px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* RESPONSIVE MOBILE DESGIN FOR MOBILE & TABLET */
+@media screen and (max-width: 1462px) {
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding-top: 20px;
+        margin: 0 20px;
+    }
+
+    h2:hover:after {
+        width: 0;
+    }
+
+
+
+/* PLEASE IGNORE THIS CODING CAUZ IT ABOUT RESPONSIVE MOBILE NAVBAR BUT BY A BUG I WAS LEAVE IT AND REMOVE NAVBAR LISTS FROM MOBILE WIDTH :( */
+    /* ul{
+  display: none;
+  width: 100vw;
+  height: 570px;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transition: all 1s;
+  
+}
+
+ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 50px 0;
+  line-height: 30px;
+  font-family: cursive;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.buttons button{
+  font-size: 1.2rem;
+  display: flex;
+}  */
+
+    ul li {
+        display: none;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .img img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90vw;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .icons img {
+        width: 100px;
+    }
+}
+
+
+
+/* THANKIEWWW GUYZZ :) */
